@@ -19,11 +19,11 @@
   -webkit-animation-name: $name;
   animation-name: $name;
 }
-@mixin animation-duration($duration...) {
-  -o-animation-duration: $duration;
-  -moz-animation-duration: $duration;
-  -webkit-animation-duration: $duration;
-  animation-duration: $duration;
+@mixin animation-delay($delay...) {
+  -o-animation-delay: $delay;
+  -moz-animation-delay: $delay;
+  -webkit-animation-delay: $delay;
+  animation-delay: $delay;
 }
 @mixin animation-duration($duration...) {
   -o-animation-duration: $duration;
@@ -66,4 +66,17 @@
   -moz-animation: $animation;
   -webkit-animation: $animation;
   animation: $animation;
+}
+
+@mixin add-box-shadow() {
+  box-shadow:
+    (random(100) +vw) (random(40) +vh) 0 0 rgba(255,255,255,.7),
+    (random(100) +vw) (random(40) +vh) 0 0 rgba(255,255,255,.7),
+    (random(100) +vw) (random(40) +vh) 0 0 rgba(255,255,255,.7),
+    (random(100) +vw) (random(40) +vh) 0 0 rgba(255,255,255,.8),
+    (random(100) +vw) (random(40) +vh) 0 0 rgba(255,255,255,.8),
+    (random(100) +vw) (random(40) +vh) 0 0 rgba(255,255,255,.8),
+    (random(100) +vw) (random(40) +vh) 0 0 rgba(255,255,255,.9),
+    (random(100) +vw) (random(40) +vh) 0 0 rgba(255,255,255,.9),
+    (random(100) +vw) (random(40) +vh) 0 0 rgba(255,255,255,.9);
 }

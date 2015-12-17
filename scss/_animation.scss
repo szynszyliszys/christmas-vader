@@ -1,0 +1,10 @@
+@include keyframes(fall-down) {
+  from {
+    transform: translateY(-150vh);
+  }
+
+  to {
+    transform: none;
+    opacity: 0
+  }
+}
