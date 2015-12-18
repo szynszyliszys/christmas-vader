@@ -6,22 +6,17 @@ body {
   height: 100%;
   max-height: 100%;
   overflow: hidden;
-  font-family: sans-serif;
-}
+  font-family: 'Amatic SC', cursive;
+  font-size: 16px;
 
-h1 {
-  color: #2E9453;
-  margin: 0;
-  padding-top: 7%;
-  text-align: center;
-  text-shadow: 1px 1px #f2f2f2;
-  span {
-    color: #C32A2A;
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
   }
 }
 
-h2 {
+h1 {
   color: white;
+  margin: 1rem 0 0;
 }
 
 a {
@@ -61,8 +56,8 @@ a {
   @include animation-name(swing);
   @include animation-iteration-count(infinite);
   @include animation-timing-function(ease-in-out);
-  -webkit-animation-duration: 1.3s;
-  animation-duration: 1.3s;
+  -webkit-animation-duration: 1.25s;
+  animation-duration: 1.25s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -82,6 +77,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  text-align: center;
+  width: 100%;
 
   button {
     -webkit-appearance: none;
@@ -91,14 +88,22 @@ a {
     border: none;
     color: transparent;
     text-indent: -9999px;
+    display: inline-block;
+    font-family: sans-serif;
+    margin-left: 1rem;
+
+    &:focus, &:active {
+      outline: 0;
+      opacity: 1;
+    }
   }
 
   span {
     display: block;
     color: white;
     text-indent: 0;
+    opacity: 0.9;
     font-size: 2rem;
-    opacity: .9;
 
     &:hover {
       opacity: 1;
@@ -133,7 +138,6 @@ footer {
   bottom: 0;
   text-align: right;
   font-weight: 300;
-  font-size: 14px;
   width: 100%;
   padding: 4px;
   p {

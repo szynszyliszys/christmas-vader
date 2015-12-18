@@ -7,6 +7,7 @@
   <title>Christmas Card from Lunar Logic</title>
 
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -18,7 +19,6 @@
     <div class="sparkle-5"></div>
 
     <div class="vader-container">
-      <h1> H<span>A</span>P<span>P</span>Y <span>H</span>O<span>L</span>I<span>D</span>A<span>Y</span>S  </h1>
       <img src="img/vader-body.png" class="vader-body" />
       <img src="img/vader-head.png" class="vader-head" />
     </div>
@@ -31,8 +31,8 @@
   </div>
   <audio id="player" src="audio/jingle-bells.mp3"></audio>
   <div class="audio-controls">
-    <h2 class="vader-music">Play music to make Darth Vader happy</h2>
-    <button value="play music" onclick="document.getElementById('player').play(); var c = document.getElementsByClassName('vader-head'); c[0].className += ' vader-head-swing';">
+    <h1 class="vader-music">Play music to make Darth Vader happy</h1>
+    <button value="play music" onclick="document.getElementById('player').play(); var c = document.getElementsByClassName('vader-head'); c[0].className = 'vader-head vader-head-swing';">
       Play
       <span aria-hidden="true">&#9654</span>
     </button>
