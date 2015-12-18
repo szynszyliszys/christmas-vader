@@ -57,7 +57,7 @@ a {
   }
 }
 
-.vader-head {
+.vader-head-swing {
   @include animation-name(swing);
   @include animation-iteration-count(infinite);
   @include animation-timing-function(ease-in-out);
@@ -74,11 +74,9 @@ a {
   max-width: 100%;
   max-height: 80%;
   left: 50%;
-}
-
-.vader-body {
   transform: translateX(-50%);
 }
+
 
 .audio-controls {
   position: absolute;
@@ -121,6 +119,15 @@ a {
   border-radius: 50%;
 }
 
+@for $i from 1 through 10 {
+  .sparkle-#{$i} {
+    @extend %sparkle;
+    @include add-box-shadow();
+    @include animation-delay(random(10) + s);
+    @include animation-duration(random(7) + 10s);
+  }
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -132,14 +139,5 @@ footer {
   p {
     margin: 0;
     color: #52A1D2;
-  }
-}
-
-@for $i from 1 through 10 {
-  .sparkle-#{$i} {
-    @extend %sparkle;
-    @include add-box-shadow();
-    @include animation-delay(random(10) + s);
-    @include animation-duration(random(7) + 10s);
   }
 }

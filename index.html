@@ -32,11 +32,11 @@
   <audio id="player" src="audio/jingle-bells.mp3"></audio>
   <div class="audio-controls">
     <h2 class="vader-music">Play music to make Darth Vader happy</h2>
-    <button value="play music" onclick="document.getElementById('player').play()">
+    <button value="play music" onclick="document.getElementById('player').play(); var c = document.getElementsByClassName('vader-head'); c[0].className += ' vader-head-swing';">
       Play
       <span aria-hidden="true">&#9654</span>
     </button>
-    <button value="pause music" onclick="document.getElementById('player').pause()">
+    <button value="pause music" onclick="document.getElementById('player').pause(); var c = document.getElementsByClassName('vader-head'); c[0].className = 'vader-head';">
       Pause
       <span aria-hidden="true"><b>ll</b></span>
     </button>
