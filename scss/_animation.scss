@@ -8,3 +8,15 @@
     opacity: 0
   }
 }
+
+@include keyframes(swing) {
+  0% {
+    transform: translateX(-50%) rotate(-4deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(4deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(-4deg);
+  }
+}
