@@ -76,6 +76,12 @@ a {
   transform: translateX(-50%);
 }
 
+.audio-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 %sparkle {
   @include animation-name(fall-down);
   @include animation-iteration-count(infinite);
